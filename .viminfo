@@ -1,0 +1,823 @@
+# 이 viminfo 파일은 빔이 만든 것입니다 Vim 8.1.
+# 조심만 한다면 고칠 수도 있습니다!
+
+# Viminfo version
+|1,4
+
+# 이 파일이 저장되었을 때의 'encoding'의 값
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 마지막으로 바꾼 문자열:
+$
+
+# 명령 행 히스토리 (새것부터 오래된 것 순):
+:q!
+|2,0,1624428526,,"q!"
+:set ts=4
+|2,0,1624428428,,"set ts=4"
+:1
+|2,0,1624428420,,"1"
+:wq!
+|2,0,1623418542,,"wq!"
+:e#
+|2,0,1623394259,,"e#"
+:$
+|2,0,1623394251,,"$"
+:e sp_commo.mak
+|2,0,1623394250,,"e sp_commo.mak"
+::q!
+|2,0,1623391863,,":q!"
+:n
+|2,0,1623378898,,"n"
+:qa!
+|2,0,1622818553,,"qa!"
+:set ts =4
+|2,0,1622818023,,"set ts =4"
+:!q!
+|2,0,1622817591,,"!q!"
+:w!
+|2,0,1622780727,,"w!"
+:set nu
+|2,0,1622776145,,"set nu"
+
+# 찾을 문자열 히스토리 (새것부터 오래된 것 순):
+?/phpnnn
+|2,1,1623380508,47,"phpnnn"
+?/Ne
+|2,1,1623380255,47,"Ne"
+? @$
+|2,1,1623378896,,"@$"
+
+# 표현 히스토리 (새것부터 오래된 것 순):
+
+# 입력 행 히스토리 (새것부터 오래된 것 순):
+
+# 디버그 행 히스토리 (새것부터 오래된 것 순):
+
+# 레지스터:
+"0	LINE	0
+		echo "//////    docker create --name $svc $svc:latest    //////"
+|3,0,0,1,1,0,1623403043,"	echo \"//////    docker create --name $svc $svc:latest    //////\""
+"1	LINE	0
+	
+|3,0,1,1,1,0,1623403022,""
+"2	LINE	0
+	RUN echo "ServerName $(ip route get 8.8.8.8 | awk '{print $NF; exit}')" >> /etc/apache2/apache2.conf
+|3,0,2,1,1,0,1623395937,"RUN echo \"ServerName $(ip route get 8.8.8.8 | awk '{print $NF; exit}')\" >> /etc/apache2/apache2.conf"
+"3	LINE	0
+	[출처] Ubuntu apache2: Could not reliably determine the server's fully qualified domain name 해결|작성자 clean_bra
+|3,0,3,1,1,0,1623395935,"[출처] Ubuntu apache2: Could not reliably determine the server's fully qualified domain name 해결|작성자 clean_bra"
+"4	LINE	0
+	
+|3,0,4,1,1,0,1623395520,""
+"5	LINE	0
+	#
+|3,0,5,1,1,0,1623395453,"#"
+"6	LINE	0
+	
+|3,0,6,1,1,0,1623395450,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1623395448,""
+"8	LINE	0
+	
+|3,0,8,1,1,0,1623395448,""
+"9	LINE	0
+	
+|3,0,9,1,1,0,1623395448,""
+"a	LINE	0
+	if [ ! -f ./$svc.dockerfile ]
+	then
+		echo "./$svc.dockerfile is not found"
+		exit
+	fi
+	
+	pid=`docker ps | grep $svc | awk '{print $1}'`
+	if [ "$pid" != "" ]
+	then
+		echo "---------------------------1"
+		echo docker stop $svc
+		docker stop $svc
+	fi
+	
+	cid=`docker ps -a | grep $svc | awk '{print $1}'`
+	if [ "$cid" != "" ]
+	then
+		echo "---------------------------2"
+		echo docker rm $cid
+		docker rm $cid
+	fi
+	
+	did=`docker images $svc | grep $svc | awk '{print $3}'`
+	if [ "$did" != "" ]
+	then
+		echo "---------------------------3"
+		echo docker rmi $did
+		docker rmi $did
+	fi
+|3,0,10,1,29,0,1623379078,"if [ ! -f ./$svc.dockerfile ]","then","	echo \"./$svc.dockerfile is not found\"","	exit","fi","","pid=`docker ps | grep $svc | awk '{print $1}'`","if [ \"$pid\" != \"\" ]","then","	echo \"---------------------------1\"","	echo docker stop $svc","	docker stop $svc","fi","","cid=`docker ps -a | grep $svc | awk '{print $1}'`","if [ \"$cid\" != \"\" ]","then","	echo \"---------------------------2\"","	echo docker rm $cid",>17
+|<"	docker rm $cid","fi","","did=`docker images $svc | grep $svc | awk '{print $3}'`","if [ \"$did\" != \"\" ]","then","	echo \"---------------------------3\"","	echo docker rmi $did","	docker rmi $did","fi"
+""-	CHAR	0
+	 
+|3,1,36,0,1,0,1623403056," "
+
+# 파일 마크:
+'0  1  0  ~/make/sp_mysql.mak
+|4,48,1,0,1624428526,"~/make/sp_mysql.mak"
+'1  1  0  ~/make/sp_commo.mak
+|4,49,1,0,1624428495,"~/make/sp_commo.mak"
+'2  30  0  ~/make/sp_php01.mak
+|4,50,30,0,1624428470,"~/make/sp_php01.mak"
+'3  56  0  ~/make/sp_php01.mak
+|4,51,56,0,1624428445,"~/make/sp_php01.mak"
+'4  56  0  ~/make/sp_php01.mak
+|4,52,56,0,1624428445,"~/make/sp_php01.mak"
+'5  39  0  ~/make/sp_commo.mak
+|4,53,39,0,1624428409,"~/make/sp_commo.mak"
+'6  39  0  ~/make/sp_commo.mak
+|4,54,39,0,1624428409,"~/make/sp_commo.mak"
+'7  6  20  ~/docro/sp_commo.auto.deploy
+|4,55,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+'8  15  21  ~/docro/sp_commo.js
+|4,56,15,21,1623406706,"~/docro/sp_commo.js"
+'9  54  56  ~/make/sp_commo.mak
+|4,57,54,56,1623403065,"~/make/sp_commo.mak"
+
+# 점프목록 (새것이 먼저):
+-'  1  0  ~/make/sp_mysql.mak
+|4,39,1,0,1624428526,"~/make/sp_mysql.mak"
+-'  1  0  ~/make/sp_commo.mak
+|4,39,1,0,1624428495,"~/make/sp_commo.mak"
+-'  1  0  ~/make/sp_commo.mak
+|4,39,1,0,1624428495,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428477,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428477,"~/make/sp_commo.mak"
+-'  30  0  ~/make/sp_php01.mak
+|4,39,30,0,1624428470,"~/make/sp_php01.mak"
+-'  30  0  ~/make/sp_php01.mak
+|4,39,30,0,1624428470,"~/make/sp_php01.mak"
+-'  30  0  ~/make/sp_php01.mak
+|4,39,30,0,1624428470,"~/make/sp_php01.mak"
+-'  30  0  ~/make/sp_php01.mak
+|4,39,30,0,1624428470,"~/make/sp_php01.mak"
+-'  56  0  ~/make/sp_php01.mak
+|4,39,56,0,1624428463,"~/make/sp_php01.mak"
+-'  56  0  ~/make/sp_php01.mak
+|4,39,56,0,1624428463,"~/make/sp_php01.mak"
+-'  56  0  ~/make/sp_php01.mak
+|4,39,56,0,1624428463,"~/make/sp_php01.mak"
+-'  56  0  ~/make/sp_php01.mak
+|4,39,56,0,1624428463,"~/make/sp_php01.mak"
+-'  56  0  ~/make/sp_php01.mak
+|4,39,56,0,1624428445,"~/make/sp_php01.mak"
+-'  56  0  ~/make/sp_php01.mak
+|4,39,56,0,1624428445,"~/make/sp_php01.mak"
+-'  56  0  ~/make/sp_php01.mak
+|4,39,56,0,1624428445,"~/make/sp_php01.mak"
+-'  56  0  ~/make/sp_php01.mak
+|4,39,56,0,1624428445,"~/make/sp_php01.mak"
+-'  52  0  ~/make/sp_php01.mak
+|4,39,52,0,1624428417,"~/make/sp_php01.mak"
+-'  52  0  ~/make/sp_php01.mak
+|4,39,52,0,1624428417,"~/make/sp_php01.mak"
+-'  52  0  ~/make/sp_php01.mak
+|4,39,52,0,1624428417,"~/make/sp_php01.mak"
+-'  52  0  ~/make/sp_php01.mak
+|4,39,52,0,1624428417,"~/make/sp_php01.mak"
+-'  52  0  ~/make/sp_php01.mak
+|4,39,52,0,1624428417,"~/make/sp_php01.mak"
+-'  52  0  ~/make/sp_php01.mak
+|4,39,52,0,1624428417,"~/make/sp_php01.mak"
+-'  52  0  ~/make/sp_php01.mak
+|4,39,52,0,1624428417,"~/make/sp_php01.mak"
+-'  52  0  ~/make/sp_php01.mak
+|4,39,52,0,1624428417,"~/make/sp_php01.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428409,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428409,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428409,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428409,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428409,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428409,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428409,"~/make/sp_commo.mak"
+-'  39  0  ~/make/sp_commo.mak
+|4,39,39,0,1624428409,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  54  56  ~/make/sp_commo.mak
+|4,39,54,56,1624428385,"~/make/sp_commo.mak"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  6  20  ~/docro/sp_commo.auto.deploy
+|4,39,6,20,1623418542,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+-'  1  0  ~/docro/sp_commo.auto.deploy
+|4,39,1,0,1623418524,"~/docro/sp_commo.auto.deploy"
+
+# 파일내의 마크 히스토리 (새것부터 오래된 순):
+
+> ~/make/sp_mysql.mak
+	*	1624428514	0
+	"	1	0
+
+> ~/make/sp_commo.mak
+	*	1624428481	0
+	"	1	0
+	^	54	57
+	.	54	56
+	+	2	0
+	+	1	0
+	+	5	22
+	+	1	0
+	+	42	31
+	+	44	15
+	+	58	20
+	+	60	20
+	+	7	19
+	+	1	5
+	+	45	37
+	+	1	0
+	+	43	37
+	+	45	28
+	+	1	5
+	+	43	33
+	+	60	1
+	+	60	7
+	+	1	25
+	+	2	0
+	+	4	14
+	+	11	1
+	+	9	36
+	+	58	0
+	+	60	12
+	+	42	6
+	+	37	37
+	+	60	0
+	+	59	13
+	+	59	0
+	+	46	25
+	+	50	13
+	+	59	0
+	+	48	59
+	+	51	0
+	+	46	23
+	+	36	0
+	+	11	2
+	+	21	50
+	+	11	2
+	+	36	0
+	+	36	14
+	+	36	0
+	+	22	11
+	+	23	3
+	+	22	6
+	+	25	15
+	+	27	0
+	+	30	0
+	+	33	64
+	+	35	0
+	+	36	0
+	+	33	0
+	+	29	0
+	+	30	7
+	+	30	9
+	+	21	5
+	+	22	14
+	+	30	13
+	+	26	0
+	+	25	5
+	+	34	0
+	+	33	5
+	+	30	0
+	+	22	0
+	+	13	25
+	+	21	28
+	+	29	34
+	+	17	17
+	+	18	13
+	+	16	35
+	+	24	34
+	+	32	34
+	+	14	7
+	+	17	21
+	+	18	10
+	+	46	23
+	+	53	38
+	+	55	18
+	+	57	26
+	+	57	55
+	+	16	23
+	+	24	21
+	+	16	33
+	+	24	42
+	+	32	0
+	+	24	33
+	+	16	32
+	+	32	35
+	+	57	0
+	+	56	0
+	+	57	65
+	+	50	16
+	+	49	99
+	+	50	25
+	+	41	42
+	+	52	29
+	+	53	0
+	+	52	54
+	+	54	56
+	a	7	0
+
+> ~/make/sp_php01.mak
+	*	1624428469	0
+	"	30	0
+	^	53	4
+	.	55	0
+	+	11	0
+	+	41	0
+	+	38	0
+	+	77	0
+	+	13	42
+	+	37	0
+	+	13	43
+	+	37	0
+	+	18	2
+	+	19	2
+	+	20	2
+	+	37	0
+	+	26	2
+	+	27	2
+	+	28	2
+	+	37	0
+	+	34	2
+	+	35	2
+	+	36	0
+	+	37	0
+	+	40	0
+	+	47	24
+	+	55	0
+	+	53	3
+	+	54	0
+	+	53	3
+	+	54	3
+	+	55	0
+
+> ~/docro/sp_commo.auto.deploy
+	*	1623418540	0
+	"	6	20
+	^	6	21
+	.	6	0
+	+	6	0
+
+> ~/docro/sp_commo.js
+	*	1623406705	0
+	"	15	21
+	^	15	22
+	.	15	21
+	+	15	21
+
+> ~/make/sp_commo.make
+	*	1623402956	0
+	"	1	0
+
+> ~/docker/sp_commo.mak
+	*	1623402819	0
+	"	48	0
+
+> ~/docker/dockerfile
+	*	1623402779	0
+	"	4	0
+
+> ~/make/sp_httpd.dockerfile
+	*	1623395940	0
+	"	9	0
+	.	9	0
+	+	4	51
+	+	4	21
+	+	5	0
+	+	4	23
+	+	5	30
+	+	6	46
+	+	12	20
+	+	11	0
+	+	8	30
+	+	10	0
+	+	11	0
+	+	10	0
+	+	9	1
+	+	10	0
+	+	9	0
+	+	10	0
+	+	9	3
+	+	10	120
+	+	10	0
+	+	9	0
+
+> ~/make/kk
+	*	1623395477	0
+	"	1	0
+
+> ~/make/sp_httpd.mak
+	*	1623394277	0
+	"	53	3
+	^	56	1
+	.	56	0
+	+	14	0
+	+	55	0
+	+	56	0
+	+	55	0
+	+	56	0
+
+> ~/make/sp_commo.dockerfile
+	*	1623392726	0
+	"	2	5
+	^	6	1
+	.	6	0
+	+	3	28
+	+	7	15
+	+	9	0
+	+	1	0
+	+	4	12
+	+	7	22
+	+	6	0
+
+> ~/src/sp_commo.js
+	*	1623392695	0
+	"	14	0
+	^	7	9
+	.	7	8
+	+	1	29
+	+	19	3
+	+	20	0
+	+	11	15
+	+	2	14
+	+	18	50
+	+	11	0
+	+	2	24
+	+	11	0
+	+	2	25
+	+	4	0
+	+	11	0
+	+	8	1
+	+	7	8
+
+> ~/make/sp_http.mak
+	*	1623391860	0
+	"	1	0
+
+> ~/make/sp_hpptd.dockerfile
+	*	1623391559	0
+	"	1	0
+
+> ~/src/sp_php01.php
+	*	1623391284	0
+	"	2	0
+	^	29	0
+	.	28	7
+	+	28	7
+
+> ~/make/sp_php01.dockerfile
+	*	1623390628	0
+	"	15	34
+	^	15	7
+	.	15	6
+	+	19	0
+	+	19	22
+	+	19	10
+	+	34	0
+	+	19	0
+	+	7	2
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	18	0
+	+	17	0
+	+	19	0
+	+	6	0
+	+	5	0
+	+	10	0
+	+	17	10
+	+	15	6
+
+> ~/make/sp_php01.docker
+	*	1623389442	0
+	"	1	0
+
+> ~/make/a
+	*	1623380516	0
+	"	200	20
+
+> ~/html/a
+	*	1623380370	0
+	"	31	8
+
+> ~/html/index.php
+	*	1623380201	0
+	"	1	18
+	^	1	19
+	.	1	18
+	+	1	18
+
+> ~/make/sp_fortu.dockerfile
+	*	1623379649	0
+	"	5	13
+	^	5	14
+	.	5	6
+	+	1	18
+	+	2	16
+	+	2	17
+	+	2	0
+	+	4	43
+	+	2	0
+	+	4	0
+	+	2	0
+	+	3	29
+	+	4	0
+	+	1	10
+	+	4	12
+	+	5	6
+
+> ~/.profile
+	*	1623374836	0
+	"	29	8
+	^	29	9
+	.	29	8
+	+	29	8
+
+> ~/src/sp_comrc.js
+	*	1622818627	0
+	"	14	0
+	.	15	53
+	+	7	58
+	+	12	0
+	+	15	53
+
+> ~/make/sp_commo/sp_commo.js
+	*	1622817591	0
+	"	1	0
+
+> ~/bin/cip
+	*	1622814379	0
+	"	1	7
+	^	1	61
+	.	1	24
+	+	1	24
+
+> ~/bin/dok_push_local_repository
+	*	1622796739	0
+	"	1	0
+
+> ~/bin/dok_pull_localrepository
+	*	1622796650	0
+	"	3	38
+	^	3	39
+	.	3	26
+	+	2	34
+	+	3	0
+	+	3	26
+
+> ~/bin/dok_make_private_repository
+	*	1622796070	0
+	"	1	69
+	^	1	70
+	.	1	26
+	+	1	26
+
+> ~/repo/httpd/dpull.sh
+	*	1622795681	0
+	"	2	18
+	^	2	19
+	.	2	18
+	+	1	24
+	+	2	0
+	+	2	18
+
+> ~/make/sp_fortu.mak
+	*	1622790852	0
+	"	20	7
+	^	16	1
+	.	16	0
+	+	19	4
+	+	17	0
+	+	19	0
+	+	17	2
+	+	16	0
+
+> ~/src/sp_fortu.sh
+	*	1622790374	0
+	"	7	3
+	^	7	4
+	.	7	3
+	+	4	0
+	+	4	2
+	+	7	3
+
+> ~/src/webserver/dockerfile
+	*	1622787934	0
+	"	7	0
+
+> ~/src/hellojs/dockerfile
+	*	1622785407	0
+	"	3	0
+	^	3	20
+	.	4	0
+	+	2	9
+	+	3	15
+	+	2	0
+	+	3	0
+	+	4	0
+
+> ~/src/hellojs/hello.js
+	*	1622785184	0
+	"	1	0
+
+> ~/bin/dokrmall
+	*	1622784945	0
+	"	1	12
+	^	1	13
+	.	1	12
+	+	1	12
+
+> ~/bin/dokrm
+	*	1622784847	0
+	"	1	26
+	^	1	27
+	.	1	26
+	+	1	26
+
+> ~/make/sp_httpd/dockerfile
+	*	1622784145	0
+	"	8	0
+
+> ~/make/sp_commo/sp_commo.dockerfile
+	*	1622778969	0
+	"	1	0
+
+> ~/make/sp_commo.38649/dockerfile
+	*	1622778327	0
+	"	4	5
+	.	4	5
+	+	4	5
+
+> ~/make/sp_commo/dockerfile
+	*	1622776818	0
+	"	1	0
+
+> ~/make/hello.mak
+	*	1622775306	0
+	"	2	70
+	.	2	0
+	+	1	23
+	+	2	6
+	+	3	0
+	+	2	28
+	+	2	6
+	+	2	0
+
+> ~/make/hello/dockerfile
+	*	1622774637	0
+	"	7	0
+	^	7	0
+	.	6	0
+	+	6	120
+	+	1	13
+	+	3	32
+	+	6	26
+	+	3	0
+	+	6	0
